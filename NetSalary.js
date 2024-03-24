@@ -62,12 +62,24 @@ function MyNHIF(totalpay) {
     return 1700;
   }
 }
-console.log(MyNHIF(10000));
+// console.log(MyNHIF(10000));
 
 // Part #3
 function NSSFDeduction(myGross) {
-  if (myGross <= 18000) {
+    if (myGross <= 7000){
+        return myGross*0.6
+    }
+  else if (myGross <= 7001 && myGross <= 18000) {
     return myGross * 0.06;
   }
-  else if
+  else {
+    return 1080
+  }
 }
+
+// Part 4
+// Calculating the Actual Net Salary, with provided fixed salary as example.
+// Not complete, to be competed
+let Salary= "money"
+let MyNHIF = totalpay*0.06
+let NSSFDeduction=
